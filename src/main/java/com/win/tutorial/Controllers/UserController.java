@@ -32,7 +32,7 @@ public class UserController {
 
         userRepository.save(user);
         model.addAttribute("users", userRepository.findAll());
-        return "redirect:/index";
+        return "results";
     }
 
     @GetMapping("/edit/{id}")
@@ -53,7 +53,7 @@ public class UserController {
 
         userRepository.save(user);
         model.addAttribute("users", userRepository.findAll());
-        return "redirect:/index";
+        return "results";
     }
 
     @GetMapping("/delete/{id}")
