@@ -1,0 +1,11 @@
+package com.win.tutorial.Repository;
+
+import com.win.tutorial.Domain.User;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserRepository extends CrudRepository<User, Long> {
+
+}
